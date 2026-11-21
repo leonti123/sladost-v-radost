@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://sladost-v-radost-spb.ru/sitemap.xml
