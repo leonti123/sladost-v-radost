@@ -1292,7 +1292,7 @@ let CAT = [{"id":12230284,"t":"Новогодний венок","p":1500,"u":"з
     let ok = false;
     try {
       const res = await fetch(LEAD_URL, {method: "POST", headers: {"Content-Type": "text/plain;charset=utf-8"}, signal: AbortSignal.timeout(20000),
-        body: JSON.stringify({site: location.hostname, name: form.name.value.trim(), phone: form.phone.value, details: ["Сайт Сладость в Радость", ...details()].join("; "), comment: form.comment.value.trim(), website: form.website.value})});
+        body: JSON.stringify({site: location.hostname, name: form.name.value.trim(), phone: form.phone.value, details: ["Сайт sladost-v-radost-spb.ru", ...details()].join("; "), comment: form.comment.value.trim(), website: form.website.value})});
       ok = (await res.json()).ok === true;
     } catch (x) {}
     submitBtn.disabled = false; submitBtn.textContent = "Отправить заявку";
